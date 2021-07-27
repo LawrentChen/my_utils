@@ -1,0 +1,17 @@
+# MySQL 数据库配置文件
+# TODO: Hash 秘钥分离
+#
+# YAML 语法与 python 应用可以参见:
+#   - http://www.ruanyifeng.com/blog/2016/07/yaml.html
+#   - https://pyyaml.org/wiki/PyYAMLDocumentation
+
+# 电商 MySQL 数据库连接信息
+# 注意：
+#   - pandas 原生的 upsert 功能仍未实现，详见其 issue #14553。
+#   - 自建方法要求必须借助中间临时表实现，因而操作账号必须拥有 insert, update, create, index 和 create temporary table 权限
+
+host: ''
+port: 3306
+user: ''
+password: ''
+charset: 'utf8'

@@ -1,0 +1,22 @@
+# Selenium 用基础配置文件
+#
+# YAML 语法与 python 应用可以参见:
+#   - http://www.ruanyifeng.com/blog/2016/07/yaml.html
+#   - https://pyyaml.org/wiki/PyYAMLDocumentation
+# 特别注意字符串的写法，空格和单双引号转义的处理，以及正则模式不能用 > 空行再写
+
+# 本地路径
+LocalPath:
+  # 默认下载路径(注意 win 下 Chrome 不认可正斜杠)
+  download_path: "C:\\Users\\laurent.chen\\Downloads"
+
+  # Chrome Driver 所在路径
+  chromedriver_path: C:\\users/laurent.chen/browser_driver/chromedriver.exe
+
+  # Firefox gecko driver 所在路径
+  geckodriver_path: C:\\users/laurent.chen/browser_driver/geckodriver.exe
+
+# 浏览器设置
+BrowserConfig:
+  # 分辨率（注意分辨率缩放会影响 selenium 定位）
+  resolution: [1600, 900]  # 即 1600 * 900
